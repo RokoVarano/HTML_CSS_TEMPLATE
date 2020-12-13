@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+//bootstrap grid config
+
+.alt-grid [class*="col-"] {
+  padding: 0;
+}
+
+.alt-grid .row {
+  margin: 0;
+}
+
+.alt-grid .container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+//bootstrap variables
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+
+$font-size-mob: 10px;
+$font-size-tab: $font-size-mob * 1.2;
+$font-size-desk: $font-size-mob * 1.4;
+$font-weight-base: 700;
+$font-family-base: 'Comic Neue', cursive !default;
+
+//lintern would not allow to use bootstrap variables directly, so...
+$b-primary: #ff9100;
+$b-secondary: #6c757d;
+$b-success: #28a745;
+$b-info: #17a2b8;
+$b-warning: #ffc107;
+$b-danger: #dc3545;
+$b-light: #f8f9fa;
+$b-dark: #343a40;
+
+$b-breakpoint-xs: 0;
+$b-breakpoint-sm: 576px;
+$b-breakpoint-md: 768px;
+$b-breakpoint-lg: 992px;
+$b-breakpoint-xl: 1200px;
+
+:root {
+  //bootstrap
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: $b-primary;
+  --secondary: $b-secondary;
+  --success: $b-success;
+  --info: $b-info;
+  --warning: $b-warning;
+  --danger: $b-danger;
+  --light: $b-light;
+  --dark: $b-dark;
+  --breakpoint-xs: $b-breakpoint-xs;
+  --breakpoint-sm: $b-breakpoint-sm;
+  --breakpoint-md: $b-breakpoint-md;
+  --breakpoint-lg: $b-breakpoint-lg;
+  --breakpoint-xl: $b-breakpoint-xl;
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+
+  //others
+
+  font-size: $font-size-mob;
+}
+
+h1 {
+  font-size: $font-size-mob * 1.5;
+  font-weight: $font-weight-base;
+}
+
+h2 {
+  font-size: $font-size-mob * 1.4;
+  font-weight: $font-weight-base;
+}
+
+h3 {
+  font-size: $font-size-mob * 1.3;
+  font-weight: $font-weight-base;
+}
+
+h4 {
+  font-size: $font-size-mob * 1.2;
+  font-weight: $font-weight-base;
+}
+
+h5 {
+  font-size: $font-size-mob * 1.1;
+  font-weight: $font-weight-base;
+}
+
+h6 {
+  font-size: $font-size-mob * 1;
+  font-weight: $font-weight-base;
+}
+
+p {
+  font-size: $font-size-mob * 1;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: $b-info;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//tablet-size
+@media (min-width: $b-breakpoint-md) {
+  :root {
+    font-size: $font-size-tab;
+  }
+
+  h1 {
+    font-size: $font-size-tab * 1.5;
+    font-weight: $font-weight-base;
+  }
+
+  h2 {
+    font-size: $font-size-tab * 1.4;
+    font-weight: $font-weight-base;
+  }
+
+  h3 {
+    font-size: $font-size-tab * 1.3;
+    font-weight: $font-weight-base;
+  }
+
+  h4 {
+    font-size: $font-size-tab * 1.2;
+    font-weight: $font-weight-base;
+  }
+
+  h5 {
+    font-size: $font-size-tab * 1.1;
+    font-weight: $font-weight-base;
+  }
+
+  h6 {
+    font-size: $font-size-tab * 1;
+    font-weight: $font-weight-base;
+  }
+
+  p {
+    font-size: $font-size-tab * 1;
+    line-height: 1.1;
+  }
+}
+
+//desktop size
+@media (min-width: $b-breakpoint-lg) {
+  :root {
+    font-size: $font-size-desk;
+  }
+
+  h1 {
+    font-size: $font-size-desk * 1.5;
+    font-weight: $font-weight-base;
+  }
+
+  h2 {
+    font-size: $font-size-desk * 1.4;
+    font-weight: $font-weight-base;
+  }
+
+  h3 {
+    font-size: $font-size-desk * 1.3;
+    font-weight: $font-weight-base;
+  }
+
+  h4 {
+    font-size: $font-size-desk * 1.2;
+    font-weight: $font-weight-base;
+  }
+
+  h5 {
+    font-size: $font-size-desk * 1.1;
+    font-weight: $font-weight-base;
+  }
+
+  h6 {
+    font-size: $font-size-desk * 1;
+    font-weight: $font-weight-base;
+  }
+
+  p {
+    font-size: $font-size-desk * 1;
+    line-height: 1.1;
+  }
+}

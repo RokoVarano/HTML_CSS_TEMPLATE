@@ -39,6 +39,15 @@ $theme-colors: (
 
 body {
   font-size: $font-size-mob;
+
+  a {
+    text-decoration: none;
+    color: $b-info;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 h1 {
@@ -74,15 +83,6 @@ h6 {
 p {
   font-size: $font-size-mob * 1;
   line-height: 1.1;
-}
-
-a {
-  text-decoration: none;
-  color: $b-info;
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 //tablet-size

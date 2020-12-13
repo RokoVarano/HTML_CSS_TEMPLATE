@@ -1,5 +1,174 @@
-@use 'pre-config';
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
-//component styles here!
+//bootstrap variables
+
+$grid-columns: 12;
+$grid-gutter-width: 0;
+$font-size-mob: 10px;
+$font-size-tab: $font-size-mob * 1.2;
+$font-size-desk: $font-size-mob * 1.4;
+$font-weight-base: 700;
+$font-family-base: 'Comic Neue', cursive !default;
+
+//lintern would not allow to use bootstrap variables directly, so...
+$b-primary: #0e00d9;
+$b-secondary: #6c757d;
+$b-success: #28a745;
+$b-info: #17a2b8;
+$b-warning: #ffc107;
+$b-danger: #dc3545;
+$b-light: #f8f9fa;
+$b-dark: #343a40;
+
+$b-breakpoint-xs: 0;
+$b-breakpoint-sm: 576px;
+$b-breakpoint-md: 768px;
+$b-breakpoint-lg: 992px;
+$b-breakpoint-xl: 1200px;
+
+$theme-colors: (
+  "primary": $b-primary,
+  "secondary": $b-secondary,
+  "success": $b-success,
+  "info": $b-info,
+  "warning": $b-warning,
+  "danger": $b-danger,
+  "light": $b-light,
+  "dark": $b-dark
+);
+
+body {
+  font-size: $font-size-mob;
+}
+
+h1 {
+  font-size: $font-size-mob * 1.5;
+  font-weight: $font-weight-base;
+}
+
+h2 {
+  font-size: $font-size-mob * 1.4;
+  font-weight: $font-weight-base;
+}
+
+h3 {
+  font-size: $font-size-mob * 1.3;
+  font-weight: $font-weight-base;
+}
+
+h4 {
+  font-size: $font-size-mob * 1.2;
+  font-weight: $font-weight-base;
+}
+
+h5 {
+  font-size: $font-size-mob * 1.1;
+  font-weight: $font-weight-base;
+}
+
+h6 {
+  font-size: $font-size-mob * 1;
+  font-weight: $font-weight-base;
+}
+
+p {
+  font-size: $font-size-mob * 1;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: $b-info;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//tablet-size
+@media (min-width: $b-breakpoint-md) {
+  body {
+    font-size: $font-size-tab;
+  }
+
+  h1 {
+    font-size: $font-size-tab * 1.5;
+    font-weight: $font-weight-base;
+  }
+
+  h2 {
+    font-size: $font-size-tab * 1.4;
+    font-weight: $font-weight-base;
+  }
+
+  h3 {
+    font-size: $font-size-tab * 1.3;
+    font-weight: $font-weight-base;
+  }
+
+  h4 {
+    font-size: $font-size-tab * 1.2;
+    font-weight: $font-weight-base;
+  }
+
+  h5 {
+    font-size: $font-size-tab * 1.1;
+    font-weight: $font-weight-base;
+  }
+
+  h6 {
+    font-size: $font-size-tab * 1;
+    font-weight: $font-weight-base;
+  }
+
+  p {
+    font-size: $font-size-tab * 1;
+    line-height: 1.1;
+  }
+}
+
+//desktop size
+@media (min-width: $b-breakpoint-lg) {
+  body {
+    font-size: $font-size-desk;
+  }
+
+  h1 {
+    font-size: $font-size-desk * 1.5;
+    font-weight: $font-weight-base;
+  }
+
+  h2 {
+    font-size: $font-size-desk * 1.4;
+    font-weight: $font-weight-base;
+  }
+
+  h3 {
+    font-size: $font-size-desk * 1.3;
+    font-weight: $font-weight-base;
+  }
+
+  h4 {
+    font-size: $font-size-desk * 1.2;
+    font-weight: $font-weight-base;
+  }
+
+  h5 {
+    font-size: $font-size-desk * 1.1;
+    font-weight: $font-weight-base;
+  }
+
+  h6 {
+    font-size: $font-size-desk * 1;
+    font-weight: $font-weight-base;
+  }
+
+  p {
+    font-size: $font-size-desk * 1;
+    line-height: 1.1;
+  }
+}
+
+//non-general classes here
 
 @import "node_modules/bootstrap/scss/bootstrap";

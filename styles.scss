@@ -4,7 +4,9 @@
 
 $grid-columns: 12;
 $grid-gutter-width: 0;
-$font-size-mob: 10px;
+
+//custom font variables
+$font-size-mob: 14px;
 $font-size-tab: $font-size-mob * 1.2;
 $font-size-desk: $font-size-mob * 1.4;
 $font-weight-base: 700;
